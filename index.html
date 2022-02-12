@@ -97,7 +97,7 @@
                             }
                             $('.modal').modal('show');
                             $('#btnSubmit').attr('disabled', true)
-                            $.post('waitinglounge.php', reqObj).done(function(data) {
+                            $.post('vwlounge.php', reqObj).done(function(data) {
                                 if(data)
                                 {
                                     var respObj = JSON.parse(data)
