@@ -14,7 +14,7 @@ $data = array(
 );
 
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, "https://fljch6vyne.execute-api.eu-central-1.amazonaws.com/default/vwapi?" . http_build_query($data));
+curl_setopt($ch, CURLOPT_URL, "https://bzmnsksmxtecuhpghfvhrpdqyi0ugxkg.lambda-url.eu-central-1.on.aws/?" . http_build_query($data));
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch);
 $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
